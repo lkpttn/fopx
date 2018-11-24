@@ -115,11 +115,11 @@ canvas {
 }
 
 .container {
-  max-width: 800px;
+  max-width: 1000px;
   margin: 0 auto;
   padding: 0 15px;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-gap: 20px 20px;
 }
 
@@ -129,11 +129,17 @@ canvas {
 
 .list {
   grid-row-start: 2;
-  grid-column: auto / span 2;
+  grid-column: 1 / -1;
 }
 
 .list-title {
-  color: #fff;
+  content: '>';
+}
+
+.list-columns {
+  grid-column: 1 / -1;
+  column-count: 4;
+  column-gap: 1em;
 }
 
 .image-insert {

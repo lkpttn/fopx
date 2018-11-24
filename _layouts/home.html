@@ -21,22 +21,35 @@
         {{ content }}
       </div>
 
-      <div class="list">
-        <span class="list-title">Projects</span>
-        <ul>
+      <!--
+        <div class="list">
+          <span class="list-title">Projects</span>
           <ul>
-              {% for project in site.projects %}
-              <li>
-                <a href="{{ project.url }}"></a>{{ project.title }}</a>
-              </li>
-              {% endfor %}
+            <ul>
+                {% for project in site.projects %}
+                <li>
+                  <a href="{{ project.url }}"></a>{{ project.title }}</a>
+                </li>
+                {% endfor %}
+            </ul>
           </ul>
-        </ul>
-      </div>
+        </div>
+
+        <div class="list">
+          <span class="list-title">Writing</span>
+          <ul>
+            {% for post in site.posts %}
+            <li>
+              <a href="{{ post.url }}">{{ post.title }}</a>
+            </li>
+            {% endfor %}
+          </ul>
+        </div>
+      -->
 
       <div class="list">
-        <span class="list-title">Writing</span>
-        <ul>
+        <span class="list-title">Recently updated</span>
+        <ul class="list-columns">
           {% for post in site.posts %}
           <li>
             <a href="{{ post.url }}">{{ post.title }}</a>
