@@ -43,6 +43,7 @@ h4 {
 
 small,
 .font-small {
+  font-family: 'Fira Sans', sans-serif;
   font-size: 0.889em;
 }
 
@@ -133,7 +134,8 @@ canvas {
 }
 
 .list-title {
-  content: '>';
+  font-family: 'Fira Sans', sans-serif;
+  text-transform: uppercase;
 }
 
 .list-columns {
