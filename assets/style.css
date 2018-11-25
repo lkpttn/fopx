@@ -1,5 +1,5 @@
 html {
-  font-size: 1.25em;
+  font-size: 1em;
 }
 
 body {
@@ -11,6 +11,7 @@ body {
 }
 
 p {
+  font-size: 1.25em;
   margin-bottom: 1.3em;
 }
 
@@ -26,19 +27,21 @@ h4 {
 
 h1 {
   margin-top: 0;
-  font-size: 1.602em;
+  font-size: 2.0025em;
 }
 
 h2 {
-  font-size: 1.424em;
+  font-size: 1.78em;
 }
 
 h3 {
-  font-size: 1.266em;
+  font-size: 1.5825em;
 }
 
 h4 {
-  font-size: 1.125em;
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 1.40626em;
+  color: rgb(199, 199, 199);
 }
 
 small,
@@ -67,15 +70,14 @@ a:hover {
 
 /* Blockquotes */
 blockquote {
-  color: #828282;
-  border-left: 4px solid #e8e8e8;
+  color: #fff;
+  border-left: 4px solid #fff;
   padding-left: 15px;
   font-size: 18px;
   letter-spacing: -1px;
-  font-style: italic;
 }
 blockquote > :last-child {
-  margin-bottom: 0;
+  margin-bottom: 15px;
 }
 
 /* Code */
@@ -116,21 +118,28 @@ canvas {
 }
 
 .container {
-  max-width: 1000px;
   margin: 0 auto;
-  padding: 0 15px;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-gap: 20px 20px;
+  grid-template-columns:
+    [edge-start] minmax(1.25rem, 1fr) [content-start] repeat(
+      12,
+      minmax(1.25rem, 5.20833rem)
+    )
+    [content-end] minmax(1.25rem, 1fr) [edge-end];
+  grid-column-gap: 0.75%;
+
+  /* grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 20px 20px; */
 }
 
 .section {
-  grid-column: 1 / span 4;
+  grid-column: content-start / span 7;
+  margin-top: 1em;
 }
 
 .list {
   grid-row-start: 2;
-  grid-column: 1 / -1;
+  grid-column: content-start / content-end;
 }
 
 .list-title {
@@ -139,9 +148,18 @@ canvas {
 }
 
 .list-columns {
-  grid-column: 1 / -1;
   column-count: 4;
   column-gap: 1em;
+}
+
+.navigation {
+  grid-column: edge-start / edge-end;
+  text-align: center;
+  margin: 15px 0;
+}
+
+.logo {
+  height: 70px;
 }
 
 .image-insert {
@@ -153,5 +171,5 @@ canvas {
 }
 
 .footer {
-  grid-column: 1 / -1;
+  grid-column: content-start / content-end;
 }
