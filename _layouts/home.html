@@ -13,39 +13,14 @@
 
   <body>
     <div class="header">
-      <canvas class="header-canvas"> <p>Help!</p> </canvas>
+      <canvas class="header-canvas"> <p>Help!</p> </canvas> {% include
+      navigation.html %}
     </div>
     <div class="container">
       <div class="section">
         <h1>{{ page.headline }}</h1>
         {{ content }}
       </div>
-
-      <!--
-        <div class="list">
-          <span class="list-title">Projects</span>
-          <ul>
-            <ul>
-                {% for project in site.projects %}
-                <li>
-                  <a href="{{ project.url }}"></a>{{ project.title }}</a>
-                </li>
-                {% endfor %}
-            </ul>
-          </ul>
-        </div>
-
-        <div class="list">
-          <span class="list-title">Writing</span>
-          <ul>
-            {% for post in site.posts %}
-            <li>
-              <a href="{{ post.url }}">{{ post.title }}</a>
-            </li>
-            {% endfor %}
-          </ul>
-        </div>
-      -->
 
       <div class="list">
         <span class="list-title">Recently updated</span>
