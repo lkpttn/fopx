@@ -110,13 +110,6 @@ pre > code {
   position: relative;
 }
 
-canvas {
-  position: absolute;
-  left: 0;
-  top: 0;
-  z-index: -1;
-}
-
 .container {
   margin: 0 auto;
   display: grid;
@@ -157,6 +150,10 @@ canvas {
   margin: 15px 0;
 }
 
+.navigation-links {
+  grid-column: content-start / content-end;
+}
+
 .logo {
   height: 70px;
   position: fixed;
@@ -168,6 +165,14 @@ canvas {
 
 .image-insert img {
   width: 100%;
+}
+
+/* Miscellaneous */
+canvas {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
 }
 
 .footer {
