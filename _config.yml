@@ -26,14 +26,11 @@ github_username: lkpttn
 
 # Collections
 collections:
-  projects:
-    output: true
 
 # Build settings
 markdown: kramdown
 theme:
 plugins:
-  - jekyll-feed
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.

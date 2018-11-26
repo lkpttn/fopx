@@ -141,8 +141,19 @@ pre > code {
 }
 
 .list-columns {
-  column-count: 4;
+  column-count: 3;
   column-gap: 1em;
+}
+
+.post-title {
+  grid-column: content-start / 8;
+  grid-row-start: 1;
+  padding-top: 200px;
+}
+
+.post-image {
+  grid-column: 7 / edge-end;
+  grid-row-start: 1;
 }
 
 .navigation {
