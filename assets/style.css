@@ -146,10 +146,22 @@ pre > code {
   column-gap: 1em;
 }
 
+.post-header {
+  padding-bottom: 50px;
+}
+
 .post-title {
   grid-column: content-start / 8;
   grid-row-start: 1;
   padding-top: 200px;
+}
+
+.post-title h1 {
+  margin: 0;
+}
+
+.metadata {
+  text-transform: uppercase;
 }
 
 .post-image {
