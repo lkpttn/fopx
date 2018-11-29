@@ -4,14 +4,14 @@ html {
 
 body {
   background: #000;
-  font-family: 'Alegreya', serif;
+  font-family: 'Fira Sans', sans-serif;
   font-weight: 400;
-  line-height: 1.5;
+  line-height: 1.45;
   color: rgb(199, 199, 199);
 }
 
 p {
-  font-size: 1.25em;
+  font-size: 1.125em;
   margin-bottom: 1.3em;
 }
 
@@ -20,8 +20,9 @@ h2,
 h3,
 h4 {
   margin: 1.414em 0 0.5em;
+  font-family: 'Inknut Antiqua', serif;
   font-weight: inherit;
-  line-height: 1.2;
+  line-height: 1.4;
   color: #fff;
 }
 
@@ -40,14 +41,13 @@ h3 {
 
 h4 {
   font-family: 'Fira Sans', sans-serif;
-  font-size: 1.40626em;
+  font-size: 1.25em;
   color: rgb(199, 199, 199);
 }
 
 small,
 .font-small {
-  font-family: 'Fira Sans', sans-serif;
-  font-size: 0.889em;
+  font-size: 0.8em;
 }
 
 img {
@@ -71,6 +71,7 @@ a:hover {
 /* Blockquotes */
 blockquote {
   color: #fff;
+  font-family: 'Inknut Antiqua', serif;
   border-left: 4px solid #fff;
   padding-left: 15px;
   font-size: 18px;
@@ -137,7 +138,6 @@ pre > code {
 }
 
 .list-title {
-  font-family: 'Fira Sans', sans-serif;
   text-transform: uppercase;
 }
 
