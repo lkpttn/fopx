@@ -146,6 +146,18 @@ pre > code {
   column-gap: 1em;
 }
 
+.list-columns .project::before {
+  content: '+';
+}
+
+.list-columns .post::before {
+  content: '–';
+}
+
+.list-columns .experiment::before {
+  content: '>';
+}
+
 .post-header {
   padding-bottom: 50px;
 }

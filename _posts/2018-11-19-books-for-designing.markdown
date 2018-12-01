@@ -2,7 +2,7 @@
 layout: post
 title: 'Books for Designing'
 date: 2018-11-19 17:40:28 -0400
-categories: post
+category: post
 ---
 
 This is my first Jekyll post written in Markdown.

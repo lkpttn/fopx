@@ -2,7 +2,7 @@
 layout: post
 title: 'Book Review'
 date: 2018-11-03 17:40:28 -0400
-categories: post review
+category: experiment
 ---
 
 This is my first Jekyll post written in Markdown.

@@ -2,7 +2,7 @@
 layout: post
 title: 'Welcome to Jekyll!'
 date: 2018-10-23 17:34:28 -0400
-categories: jekyll update
+category: experiment
 ---
 
 # Hello World
