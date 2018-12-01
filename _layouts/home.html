@@ -19,13 +19,14 @@
       <div class="list">
         <span class="list-title font-small">Recently updated</span>
         <ul class="list-columns">
-          {% for post in site.posts %}
+          {% for post in site.posts limit:20 %}
           <li class="{{ post.category }}">
             <a href="{{ post.url }}">{{ post.title }}</a
             ><span class="font-small"> - {{ post.date | date_to_string }}</span>
           </li>
           {% endfor %}
         </ul>
+        <span>See all pages</span>
       </div>
     </div>
 
