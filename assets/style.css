@@ -168,6 +168,11 @@ pre > code {
   padding-top: 200px;
 }
 
+.experiment-title {
+  grid-column: content-start / 8;
+  grid-row-start: 1;
+}
+
 .post-title h1 {
   margin: 0;
 }
@@ -209,6 +214,31 @@ canvas {
   left: 0;
   top: 0;
   z-index: -1;
+}
+
+.browser > * {
+  display: block;
+}
+
+.browser {
+  grid-column: content-start / content-end;
+  border-top: 2em solid rgba(255, 255, 255, 0.9);
+  box-shadow: 0 0.1em 1em 0 rgba(0, 0, 0, 0.4);
+  position: relative;
+  border-radius: 3px 3px 0 0;
+}
+
+.browser:before {
+  display: block;
+  position: absolute;
+  content: '';
+  top: -1.25em;
+  left: 1em;
+  width: 0.5em;
+  height: 0.5em;
+  border-radius: 50%;
+  background-color: #f44;
+  box-shadow: 0 0 0 2px #f44, 1.5em 0 0 2px #9b3, 3em 0 0 2px #fb5;
 }
 
 .footer {
