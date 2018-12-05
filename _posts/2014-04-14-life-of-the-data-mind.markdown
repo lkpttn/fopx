@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'Life of the Data Mind'
-date: 2018-11-24 17:40:28 -0400
+date: 2014-04-14 17:40:28 -0400
 category: project
 tags: print data
 image: projects/datamind/header.jpg
