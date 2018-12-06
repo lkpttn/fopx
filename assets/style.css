@@ -10,6 +10,7 @@ body {
   color: rgb(199, 199, 199);
 }
 
+/* Text */
 p {
   font-size: 1.125em;
   margin-bottom: 1.3em;
@@ -55,6 +56,11 @@ small,
   font-size: 0.8em;
 }
 
+.metadata {
+  text-transform: uppercase;
+}
+
+/* Basics */
 hr {
   margin: 1.78em 0;
 }
@@ -131,14 +137,22 @@ pre > code {
     )
     [content-end] minmax(1.25rem, 1fr) [edge-end];
   grid-column-gap: 0.75%;
-
-  /* grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-gap: 20px 20px; */
 }
 
 .section {
-  grid-column: content-start / span 7;
-  margin-top: 1em;
+  grid-column: content-start / content-end;
+}
+
+@media (min-width: 500px) {
+  .section {
+    grid-column: content-start / span 9;
+  }
+}
+
+@media (min-width: 900px) {
+  .section {
+    grid-column: content-start / span 7;
+  }
 }
 
 .list {
@@ -146,13 +160,21 @@ pre > code {
   grid-column: content-start / content-end;
 }
 
-.list-title {
-  text-transform: uppercase;
+.list-columns {
+  column-count: 1;
+  column-gap: 1em;
 }
 
-.list-columns {
-  column-count: 3;
-  column-gap: 1em;
+@media (min-width: 500px) {
+  .list-columns {
+    column-count: 2;
+  }
+}
+
+@media (min-width: 900px) {
+  .list-columns {
+    column-count: 3;
+  }
 }
 
 .list-columns .project::before {
@@ -167,34 +189,6 @@ pre > code {
   content: '>';
 }
 
-.post-header {
-  padding-bottom: 50px;
-}
-
-.post-title {
-  grid-column: content-start / 7;
-  grid-row-start: 1;
-  padding-top: 200px;
-}
-
-.experiment-title {
-  grid-column: content-start / 7;
-  grid-row-start: 1;
-}
-
-.post-title h1 {
-  margin: 0;
-}
-
-.metadata {
-  text-transform: uppercase;
-}
-
-.post-image {
-  grid-column: 7 / edge-end;
-  grid-row-start: 1;
-}
-
 .navigation {
   grid-column: edge-start / edge-end;
   margin: 15px 0;
@@ -204,9 +198,55 @@ pre > code {
   grid-column: content-start / content-end;
 }
 
-.logo {
-  height: 70px;
-  position: fixed;
+/* Posts */
+.post-header {
+  padding-bottom: 30px;
+}
+
+.post-title {
+  grid-column: content-start / content-end;
+  padding-top: 30px;
+}
+
+@media (min-width: 900px) {
+  .post-title {
+    grid-column: content-start / 7;
+    grid-row-start: 1;
+    padding-top: 200px;
+  }
+}
+
+.post-title h1 {
+  margin: 0;
+}
+
+.experiment-title {
+  grid-column: content-start / content-end;
+  padding-bottom: 30px;
+}
+
+@media (min-width: 900px) {
+  .experiment-title {
+    grid-column: content-start / 7;
+    grid-row-start: 1;
+  }
+}
+
+.experiment-title h1 {
+  margin: 0;
+}
+
+.post-image {
+  grid-column: edge-start / edge-end;
+  grid-row-start: 1;
+  max-height: 480px;
+  overflow: hidden;
+}
+
+@media (min-width: 900px) {
+  .post-image {
+    grid-column: 7 / edge-end;
+  }
 }
 
 .image-insert {
@@ -218,6 +258,17 @@ pre > code {
 }
 
 /* Miscellaneous */
+.logo {
+  height: 70px;
+  position: relative;
+}
+
+@media (min-width: 1200px) {
+  .logo {
+    position: fixed;
+  }
+}
+
 canvas {
   position: absolute;
   left: 0;
