@@ -249,6 +249,10 @@ pre > code {
   }
 }
 
+.embed {
+  grid-column: content-start / content-end;
+}
+
 .image-insert {
   grid-column: 1 / -1;
 }

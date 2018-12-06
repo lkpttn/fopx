@@ -12,6 +12,8 @@
         <div class="browser">
           <img src="/assets/images/{{ page.image }}" alt="{{ page.title }}" />
         </div>
+        {% endif %} {% if page.embed %}
+        <div class="embed">{{ page.embed }}</div>
         {% endif %}
       </div>
 

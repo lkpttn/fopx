@@ -1,0 +1,18 @@
+---
+layout: experiment
+title: 'Canvas Drawing'
+date: 2018-12-06 17:40:28 -0400
+category: experiment
+tags: code javascript
+embed: '<div class="glitch-embed-wrap" style="height: 480px; width: 100%;">
+  <iframe
+    allow="geolocation; microphone; camera; midi; encrypted-media"
+    src="https://glitch.com/embed/#!/embed/fixed-contraption?path=README.md&previewSize=100"
+    alt="fixed-contraption on Glitch"
+    style="height: 100%; width: 100%; border: 0;">
+  </iframe>
+</div>'
+
+---
+
+Drawing with the html `canvas` element is fun and rewarding.
