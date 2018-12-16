@@ -1,6 +1,6 @@
 ---
 layout: home
-title: Friend of Pixels
+title: Home
 headline: Friend of Pixels is Luke Patton, a product designer living and working in New York City.
 ---
 
