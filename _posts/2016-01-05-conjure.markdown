@@ -2,7 +2,7 @@
 layout: post
 title: 'Conjure'
 date: 2016-01-05 17:40:28 -0400
-category: project
+category: projects
 tags: design ios development
 image: projects/conjure/header.jpg
 ---

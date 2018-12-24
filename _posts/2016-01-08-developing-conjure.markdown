@@ -2,7 +2,7 @@
 layout: post
 title: 'Developing Conjure'
 date: 2016-01-08 17:40:28 -0400
-category: post
+category: posts
 ---
 
 I recently launched my second iOS app, Conjure, a game assistant for Magic: The Gathering players. It allows users to maintain and track a list of decks, keep a match history and review their games. When I began working on it, I had never written Swift code before and had only a conceptual understanding of [MVC software development](https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller). I knew I would want to look back on the process, so I documented my progress learning Swift, designing and developing in tandem. The Swift code is open-source and available on [Github](https://github.com/lkpttn/Conjure).

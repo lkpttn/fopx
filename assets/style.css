@@ -186,15 +186,15 @@ pre > code {
   }
 }
 
-.list-columns .project::before {
+.list-columns .projects::before {
   content: '+';
 }
 
-.list-columns .post::before {
+.list-columns .posts::before {
   content: '–';
 }
 
-.list-columns .experiment::before {
+.list-columns .experiments::before {
   content: '>';
 }
 

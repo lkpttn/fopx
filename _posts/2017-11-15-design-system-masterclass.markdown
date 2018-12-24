@@ -2,7 +2,7 @@
 layout: post
 title: 'Design Systems Masterclass'
 date: 2017-11-15 17:40:28 -0400
-category: project
+category: projects
 tags: design speaking
 image: projects/masterclass/header.jpg
 ---

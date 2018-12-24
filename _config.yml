@@ -23,6 +23,8 @@ url: 'http://friendofpixels.com' # the base hostname & protocol for your site, e
 twitter_username: friendofpixels
 github_username: lkpttn
 
+permalink: /:categories/:title
+
 # Build settings
 markdown: kramdown
 # Exclude from processing.
